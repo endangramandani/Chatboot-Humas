@@ -1,0 +1,877 @@
+{
+  "database_name": "db_unpi_cianjur",
+  "version": "2026.2",
+  "last_updated": "2026-11-03",
+  "sumber_data_registry": [
+    {
+      "tier": "A",
+      "nama_kelompok": "Sumber Resmi UNPI",
+      "sumber": "Portal & Humas Universitas Putra Indonesia Cianjur",
+      "url": "https://www.unpi-cianjur.ac.id/",
+      "tipe_integrasi": "Portal Resmi, PMB & Repository",
+      "status": "Aktif & Terhubung",
+      "prioritas": 1,
+      "cakupan": "Profil, struktur organisasi, biaya, PMB, fasilitas, berita kampus"
+    },
+    {
+      "tier": "B",
+      "nama_kelompok": "Sumber Data Pendidikan Nasional",
+      "sumber": "PDDikti, BAN-PT & LLDIKTI Wilayah IV",
+      "url": "https://pddikti.kemdiktisaintek.go.id/",
+      "tipe_integrasi": "Direktori Resmi & Pangkalan Data Pendidikan Tinggi",
+      "status": "Aktif & Terverifikasi",
+      "prioritas": 1,
+      "cakupan": "Akreditasi universitas, akreditasi 6 program studi, SK pejabat, legalitas prodi"
+    },
+    {
+      "tier": "C",
+      "nama_kelompok": "Sumber Ensiklopedia Digital",
+      "sumber": "Wikipedia Ensiklopedia Bebas",
+      "url": "https://id.wikipedia.org/api/rest_v1/page/summary/Universitas_Putra_Indonesia_Cianjur",
+      "tipe_integrasi": "Wikipedia REST API v1",
+      "status": "API Terhubung",
+      "prioritas": 3,
+      "cakupan": "Histori ringkas, geografi kampus, informasi pendukung umum"
+    },
+    {
+      "tier": "D",
+      "nama_kelompok": "Media Sosial Resmi Kampus",
+      "sumber": "Instagram, YouTube, TikTok, Facebook UNPI",
+      "url": "https://www.instagram.com/unpicianjur/",
+      "tipe_integrasi": "Publikasi Media Sosial Resmi UNPI",
+      "status": "Aktif & Dipantau",
+      "prioritas": 2,
+      "cakupan": "Agenda mahasiswa, dokumentasi kegiatan, prestasi terkini, siaran pers"
+    },
+    {
+      "tier": "E",
+      "nama_kelompok": "Sumber Informasi Tambahan",
+      "sumber": "Media Massa & Publikasi Jurnal Ilmiah Terpercaya",
+      "url": "https://repository.unpi-cianjur.ac.id/",
+      "tipe_integrasi": "Repository & Publikasi Ilmiah Kampus",
+      "status": "Aktif",
+      "prioritas": 3,
+      "cakupan": "Karya ilmiah sivitas akademika, konferensi, liputan media nasional"
+    }
+  ],
+  "riwayat_sinkronisasi": [
+    {
+      "id": "SYNC-20261103-0316",
+      "tanggal": "2026-11-03T03:16:24.357Z",
+      "metode": "Wikipedia REST API & LLDIKTI IV Directory Verifier",
+      "status": "BERHASIL",
+      "catatan": "Sinkronisasi 15 kategori terpadu selesai. Status REST Wikipedia: Terhubung. Data terverifikasi LLDIKTI IV tetap konsisten."
+    },
+    {
+      "id": "SYNC-2026-1102-001",
+      "tanggal": "2026-11-02T19:00:00Z",
+      "metode": "Wikipedia REST API & LLDIKTI IV Sync Engine",
+      "status": "BERHASIL",
+      "catatan": "Sinkronisasi direktori program studi LLDIKTI IV, data pimpinan UNPI, dan REST API ensiklopedia selesai tanpa galat."
+    }
+  ],
+  "kategori_terpadu": {
+    "1_profil_sejarah": {
+      "kategori": "Profil & Sejarah Institusi",
+      "metadata": {
+        "sumber": "Portal Resmi UNPI & SK Pendirian Yayasan",
+        "url_sumber": "https://www.unpi-cianjur.ac.id/",
+        "tanggal_pengambilan": "2026-01-10",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - Sumber Utama Institusi"
+      },
+      "data": {
+        "nama": "Universitas Putra Indonesia (UNPI) Cianjur",
+        "singkatan": "UNPI Cianjur",
+        "yayasan": "Yayasan Pendidikan Putra Indonesia (YPP-PI)",
+        "tahun_berdiri": 2001,
+        "alamat": "Jl. Dr. Muwardi No. 66 (Bypass), Kel. Muka, Kec. Cianjur, Kabupaten Cianjur, Jawa Barat 43215",
+        "telepon": "(0263) 262604 / 270958",
+        "email": "info@unpi-cianjur.ac.id",
+        "email_humas": "humas@unpi-cianjur.ac.id",
+        "website": "https://www.unpi-cianjur.ac.id/",
+        "visi": "Menjadi Universitas Unggul dalam Pengembangan Ilmu Pengetahuan, Teknologi, dan Seni Berlandaskan Jiwa Kewirausahaan serta Nilai-Nilai Moral dan Etika pada Tahun 2030.",
+        "misi": [
+          "Menyelenggarakan pendidikan tinggi berkualitas berbasis nilai moral, etika, dan jiwa kewirausahaan.",
+          "Melaksanakan penelitian inovatif yang bermanfaat bagi pengembangan masyarakat dan ilmu pengetahuan.",
+          "Melakukan pengabdian kepada masyarakat secara berkelanjutan demi pemberdayaan sosial dan ekonomi daerah.",
+          "Memperluas kemitraan dan kerja sama strategis di tingkat lokal, nasional, dan internasional."
+        ]
+      }
+    },
+    "2_rektor_pimpinan": {
+      "kategori": "Rektor & Pimpinan Universitas",
+      "metadata": {
+        "sumber": "SK Yayasan Pendidikan Putra Indonesia & SK Rektor UNPI",
+        "url_sumber": "https://www.unpi-cianjur.ac.id/tentang-kami/pimpinan",
+        "tanggal_pengambilan": "2026-01-15",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - SK Resmi Pejabat"
+      },
+      "daftar_pimpinan": [
+        {
+          "jabatan": "Ketua Yayasan Pendidikan Putra Indonesia (YPP-PI)",
+          "nama": "H. Yudi Junadi, S.H., M.H.",
+          "unit": "Yayasan YPP-PI",
+          "dasar_sk": "SK Yayasan YPP-PI Official"
+        },
+        {
+          "jabatan": "Rektor",
+          "nama": "Dr. Astri Dwi Andriani, S.S., M.Pd.",
+          "unit": "Rektorat UNPI Cianjur",
+          "dasar_sk": "SK Rektor UNPI Official"
+        },
+        {
+          "jabatan": "Wakil Rektor I (Bidang Akademik & Kurikulum)",
+          "nama": "Ir. Cecep Nurul Alam, M.T.",
+          "unit": "Wakil Rektorat I",
+          "dasar_sk": "SK Rektor UNPI Official"
+        },
+        {
+          "jabatan": "Wakil Rektor II (Bidang Keuangan, SDM & Aset)",
+          "nama": "Hj. Endang Tri S, S.E., M.M.",
+          "unit": "Wakil Rektorat II",
+          "dasar_sk": "SK Rektor UNPI Official"
+        },
+        {
+          "jabatan": "Wakil Rektor III (Bidang Kemahasiswaan, Alumni & Humas)",
+          "nama": "Drs. H. Mulyadi, M.Si.",
+          "unit": "Wakil Rektorat III",
+          "dasar_sk": "SK Rektor UNPI Official"
+        }
+      ]
+    },
+    "3_fakultas_dekan": {
+      "kategori": "Fakultas & Dekan",
+      "metadata": {
+        "sumber": "Struktur Organisasi UNPI & Direktori LLDIKTI IV",
+        "url_sumber": "https://lldikti4.kemdiktisaintek.go.id/",
+        "tanggal_pengambilan": "2026-02-01",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Status Dekan Belum Terverifikasi SK Baru",
+        "prioritas_sumber": "Tingkat 1 - Direktori LLDIKTI IV"
+      },
+      "daftar_fakultas": [
+        {
+          "kode": "FT",
+          "nama": "Fakultas Teknik",
+          "dekan": "Belum Terverifikasi (Pejabat Baru)",
+          "status_dekan": "Belum Terverifikasi SK",
+          "catatan": "Jangan menggunakan nama dekan lama tanpa verifikasi SK pejabat aktif terbaru."
+        },
+        {
+          "kode": "FE",
+          "nama": "Fakultas Ekonomi",
+          "dekan": "Belum Terverifikasi (Pejabat Baru)",
+          "status_dekan": "Belum Terverifikasi SK",
+          "catatan": "Jangan menggunakan nama dekan lama tanpa verifikasi SK pejabat aktif terbaru."
+        },
+        {
+          "kode": "FIKOM",
+          "nama": "Fakultas Ilmu Komunikasi",
+          "dekan": "Belum Terverifikasi (Pejabat Baru)",
+          "status_dekan": "Belum Terverifikasi SK",
+          "catatan": "Belum terverifikasi dalam basis pengetahuan S.I.M.A.S."
+        },
+        {
+          "kode": "FS",
+          "nama": "Fakultas Sastra",
+          "dekan": "Belum Terverifikasi (Pejabat Baru)",
+          "status_dekan": "Belum Terverifikasi SK",
+          "catatan": "Belum terverifikasi dalam basis pengetahuan S.I.M.A.S."
+        }
+      ]
+    },
+    "4_program_studi_kaprodi": {
+      "kategori": "Program Studi & Kepala UP Prodi",
+      "metadata": {
+        "sumber": "Direktori Resmi LLDIKTI Wilayah IV & PDDikti",
+        "url_sumber": "https://pddikti.kemdiktisaintek.go.id/",
+        "tanggal_pengambilan": "2026-03-01",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - LLDIKTI IV & PDDikti"
+      },
+      "daftar_prodi": [
+        {
+          "jenjang": "S1",
+          "nama_prodi": "Teknik Informatika",
+          "fakultas": "Fakultas Teknik",
+          "gelar": "S.Kom. (Sarjana Komputer)",
+          "kepala_up_prodi": "Mohamad Sidiq Permana, S.T., M.Kom.",
+          "akreditasi": "Baik Sekali",
+          "prospek_karir": [
+            "Software Engineer",
+            "Fullstack Developer",
+            "Data Scientist",
+            "IT Manager"
+          ]
+        },
+        {
+          "jenjang": "S1",
+          "nama_prodi": "Manajemen",
+          "fakultas": "Fakultas Ekonomi",
+          "gelar": "S.M. (Sarjana Manajemen)",
+          "kepala_up_prodi": "Iis Kartini, S.Sos., M.M.",
+          "akreditasi": "Baik Sekali",
+          "prospek_karir": [
+            "Business Manager",
+            "Digital Marketer",
+            "Entrepreneur",
+            "HR Officer"
+          ]
+        },
+        {
+          "jenjang": "S1",
+          "nama_prodi": "Akuntansi",
+          "fakultas": "Fakultas Ekonomi",
+          "gelar": "S.Ak. (Sarjana Akuntansi)",
+          "kepala_up_prodi": "Merry Merliani Hindarsah, S.E., M.Ak.",
+          "akreditasi": "Baik",
+          "prospek_karir": [
+            "Auditor",
+            "Akuntan Perusahaan",
+            "Konsultan Pajak",
+            "Analis Keuangan"
+          ]
+        },
+        {
+          "jenjang": "S1",
+          "nama_prodi": "Ilmu Komunikasi",
+          "fakultas": "Fakultas Ilmu Komunikasi",
+          "gelar": "S.I.Kom. (Sarjana Ilmu Komunikasi)",
+          "kepala_up_prodi": "Dwi Sri Agustina, S.I.Kom., M.I.Kom.",
+          "akreditasi": "Baik Sekali",
+          "prospek_karir": [
+            "Public Relations Specialist",
+            "Social Media Strategist",
+            "Journalist",
+            "Content Creator"
+          ]
+        },
+        {
+          "jenjang": "S1",
+          "nama_prodi": "Sastra Inggris",
+          "fakultas": "Fakultas Sastra",
+          "gelar": "S.S. (Sarjana Sastra)",
+          "kepala_up_prodi": "Shagita Maulady Anjany, M.Hum.",
+          "akreditasi": "Baik",
+          "prospek_karir": [
+            "Translator & Interpreter",
+            "Content Writer",
+            "Linguist",
+            "Diplomatic Staff"
+          ]
+        },
+        {
+          "jenjang": "D3",
+          "nama_prodi": "Manajemen Informatika",
+          "fakultas": "Fakultas Teknik",
+          "gelar": "A.Md.Kom. (Ahli Madya Komputer)",
+          "kepala_up_prodi": "Widianjani, M.Pd.",
+          "akreditasi": "Baik",
+          "prospek_karir": [
+            "IT Support Specialist",
+            "Database Administrator Staff",
+            "Junior Programmer"
+          ]
+        }
+      ]
+    },
+    "5_dosen_tenaga_kependidikan": {
+      "kategori": "Dosen & Tenaga Kependidikan",
+      "metadata": {
+        "sumber": "PDDikti Kementerian & Bagian Kepegawaian UNPI",
+        "url_sumber": "https://pddikti.kemdiktisaintek.go.id/",
+        "tanggal_pengambilan": "2026-03-15",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - PDDikti"
+      },
+      "ringkasan": {
+        "kualifikasi_dosen": "100% Berpendidikan Magister (S2) dan Doktor (S3)",
+        "sertifikasi_dosen": "Tersertifikasi Pendidik Profesional (SERDOS)",
+        "tenaga_kependidikan": "Didukung staf BAAK, BAUK, IT Support, Pustakawan, dan Laboran profesional",
+        "rasio_dosen_mahasiswa": "Sesuai standar kementerian pendidikan (1:25 untuk sains teknologi, 1:35 untuk sosial humaniora)"
+      }
+    },
+    "6_data_mahasiswa": {
+      "kategori": "Data Kemahasiswaan & Organisasi Kampus",
+      "metadata": {
+        "sumber": "Biro Kemahasiswaan UNPI Cianjur",
+        "url_sumber": "https://www.unpi-cianjur.ac.id/kemahasiswaan",
+        "tanggal_pengambilan": "2026-04-01",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - Biro Kemahasiswaan"
+      },
+      "organisasi": {
+        "pemerintahan_mahasiswa": [
+          "Badan Eksekutif Mahasiswa (BEM UNPI)",
+          "Dewan Perwakilan Mahasiswa (DPM UNPI)"
+        ],
+        "himpunan_jurusan": [
+          "HIMA Informatika (Fakultas Teknik)",
+          "HIMA Manajemen (Fakultas Ekonomi)",
+          "HIMA Akuntansi (Fakultas Ekonomi)",
+          "HIMA Ilmu Komunikasi (FIKOM)",
+          "HIMA Sastra Inggris (Fakultas Sastra)"
+        ],
+        "ukm": [
+          "UKM Olahraga (Futsal, Basket, Badminton)",
+          "UKM Kesenian & Musik Kampus",
+          "UKM Mahasiswa Pecinta Alam (MAPALA UNPI)",
+          "UKM KSR Palang Merah Indonesia (PMI)",
+          "UKM Kerohanian Islam (Rohis Al-Fikri)",
+          "UKM Pramuka Racana Putra Indonesia"
+        ]
+      }
+    },
+    "7_akreditasi": {
+      "kategori": "Akreditasi Institusi & Program Studi",
+      "metadata": {
+        "sumber": "Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT), LAM INFOKOM & LAMEMBA",
+        "url_sumber": "https://www.banpt.or.id/",
+        "tanggal_pengambilan": "2026-03-10",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - BAN-PT & Lembaga Akreditasi Mandiri"
+      },
+      "akreditasi_institusi": {
+        "predikat": "Baik Sekali",
+        "lembaga": "BAN-PT",
+        "nomor_sk": "No. 782/SK/BAN-PT/Akred/PT/2024",
+        "masa_berlaku": "2029"
+      },
+      "akreditasi_prodi": [
+        {
+          "prodi": "S1 Teknik Informatika",
+          "predikat": "Baik Sekali",
+          "lembaga": "LAM INFOKOM / BAN-PT",
+          "nomor_sk": "No. 124/SK/LAM-INFOKOM/Akred/S1/2024",
+          "masa_berlaku": "2029"
+        },
+        {
+          "prodi": "S1 Manajemen",
+          "predikat": "Baik Sekali",
+          "lembaga": "LAMEMBA / BAN-PT",
+          "nomor_sk": "No. 312/SK/LAMEMBA/Akred/S1/2024",
+          "masa_berlaku": "2029"
+        },
+        {
+          "prodi": "S1 Akuntansi",
+          "predikat": "Baik",
+          "lembaga": "LAMEMBA / BAN-PT",
+          "nomor_sk": "No. 195/SK/LAMEMBA/Akred/S1/2023",
+          "masa_berlaku": "2028"
+        },
+        {
+          "prodi": "S1 Ilmu Komunikasi",
+          "predikat": "Baik Sekali",
+          "lembaga": "BAN-PT",
+          "nomor_sk": "No. 401/SK/BAN-PT/Akred/S1/2024",
+          "masa_berlaku": "2029"
+        },
+        {
+          "prodi": "S1 Sastra Inggris",
+          "predikat": "Baik",
+          "lembaga": "BAN-PT",
+          "nomor_sk": "No. 305/SK/BAN-PT/Akred/S1/2024",
+          "masa_berlaku": "2029"
+        },
+        {
+          "prodi": "D3 Manajemen Informatika",
+          "predikat": "Baik",
+          "lembaga": "BAN-PT",
+          "nomor_sk": "No. 092/SK/BAN-PT/Akred/D3/2023",
+          "masa_berlaku": "2028"
+        }
+      ]
+    },
+    "8_pmb_2026": {
+      "kategori": "Penerimaan Mahasiswa Baru (PMB) 2026",
+      "metadata": {
+        "sumber": "Panitia PMB & Portal Resmi PMB UNPI",
+        "url_sumber": "https://www.unpi-cianjur.ac.id/pmb",
+        "tanggal_pengambilan": "2026-04-10",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - Panitia PMB Kampus"
+      },
+      "biaya_pendaftaran": "Rp 250.000,- (Satu kali pendaftaran)",
+      "status_saat_ini": "Gelombang 2 Aktif",
+      "gelombang": [
+        {
+          "gelombang": "Gelombang 1 (Early Bird)",
+          "periode": "02 Jan - 30 Apr 2026",
+          "potonganBiaya": "Diskon 30% Registrasi Awal",
+          "status": "Selesai"
+        },
+        {
+          "gelombang": "Gelombang 2 (Reguler Utama)",
+          "periode": "01 Mei - 31 Jul 2026",
+          "potonganBiaya": "Diskon 15% Biaya Pengembangan Institusi",
+          "status": "Aktif"
+        },
+        {
+          "gelombang": "Gelombang 3 (Gelombang Akhir)",
+          "periode": "01 Ags - 25 Sep 2026",
+          "potonganBiaya": "Fasilitas Cicilan Fleksibel",
+          "status": "Mendatang"
+        }
+      ],
+      "jalur_masuk": [
+        "Jalur Nilai Raport (Tanpa Tes Tertulis)",
+        "Jalur Skor UTBK / SNBT",
+        "Jalur Prestasi Akademik & Seni/Olahraga",
+        "Jalur Beasiswa Hafiz Al-Qur'an & Influencer",
+        "Jalur Kelas Karyawan / Sore-Malam"
+      ],
+      "persyaratan_dokumen": [
+        "Fotokopi Ijazah / SKL SMA/SMK/MA legalisir (2 lembar)",
+        "Fotokopi Raport / Transkrip Nilai (2 lembar)",
+        "Fotokopi KTP & Kartu Keluarga (2 lembar)",
+        "Pas Foto 3x4 (4 lembar) dan 4x6 (2 lembar)",
+        "Formulir Pendaftaran resmi"
+      ]
+    },
+    "9_biaya_beasiswa": {
+      "kategori": "Biaya Kuliah & Program Beasiswa",
+      "metadata": {
+        "sumber": "Bagian Keuangan & Humas UNPI Cianjur",
+        "url_sumber": "https://www.unpi-cianjur.ac.id/biaya-kuliah",
+        "tanggal_pengambilan": "2026-04-15",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - Keuangan Kampus"
+      },
+      "sistem_pembayaran": "UKT terjangkau dengan skema cicilan bulanan ringan tanpa bunga",
+      "beasiswa": [
+        {
+          "nama": "KIP Kuliah Kementerian",
+          "cakupan": "Bebas 100% UKT 8 Semester + Uang Saku Bulanan",
+          "syarat": "Kartu KIP/KKS/DTKS Kemensos, Lulusan SMA/SMK 2024-2026",
+          "periode": "Mei - Juli 2026"
+        },
+        {
+          "nama": "Beasiswa Hafiz Al-Qur'an UNPI",
+          "cakupan": "Potongan 50% (5 Juz), 75% (10 Juz), Bebas 100% (30 Juz)",
+          "syarat": "Syahadah Tahfiz & Lolos Uji Tasmi' Tim Penilai UNPI",
+          "periode": "Sepanjang Periode PMB"
+        },
+        {
+          "nama": "Beasiswa Influencer & Creative",
+          "cakupan": "Potongan UKT 50% & Terpilih Sebagai Duta Humas Kampus",
+          "syarat": "Min. 5.000 followers di Instagram/TikTok/YouTube positif",
+          "periode": "Gelombang 1 & 2 PMB"
+        },
+        {
+          "nama": "Beasiswa Prestasi Yayasan YPP-PI",
+          "cakupan": "Potongan Biaya Pendidikan 25% - 50%",
+          "syarat": "Juara 1-3 Kejuaraan Tingkat Kabupaten/Provinsi/Nasional",
+          "periode": "Gelombang 1-3 PMB"
+        }
+      ]
+    },
+    "10_kegiatan_agenda": {
+      "kategori": "Kegiatan & Agenda Kampus",
+      "metadata": {
+        "sumber": "Kalender Akademik & Berita Resmi Humas UNPI",
+        "url_sumber": "https://www.unpi-cianjur.ac.id/agenda",
+        "tanggal_pengambilan": "2026-05-01",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - Humas Kampus"
+      },
+      "agenda_tahunan": [
+        {
+          "nama_kegiatan": "Masa Pengenalan Kampus (PKKMB / Mabim)",
+          "waktu": "September 2026",
+          "deskripsi": "Pengenalan kehidupan kampus, penguatan nilai etika, dan pelatihan soft skill bagi mahasiswa baru."
+        },
+        {
+          "nama_kegiatan": "Wisuda Sarjana & Ahli Madya UNPI",
+          "waktu": "Oktober / November 2026",
+          "deskripsi": "Sidang Terbuka Senat Wisuda Lulusan Sarjana dan Ahli Madya se-UNPI Cianjur."
+        },
+        {
+          "nama_kegiatan": "Dies Natalis UNPI Cianjur",
+          "waktu": "Peringatan Berdirinya Kampus",
+          "deskripsi": "Rangkaian seminar ilmiah, jalan santai, bakti sosial, dan pameran technopreneurship mahasiswa."
+        },
+        {
+          "nama_kegiatan": "Seminar Nasional Teknologi Informasi & Ekonomi",
+          "waktu": "Juni - Juli 2026",
+          "deskripsi": "Forum diskusi inovasi kecerdasan buatan, ekonomi kreatif, dan transformasi digital daerah."
+        }
+      ]
+    },
+    "11_berita_prestasi": {
+      "kategori": "Berita & Prestasi Kampus",
+      "metadata": {
+        "sumber": "Kanal Berita Humas UNPI & Lembaga Prestasi Mahasiswa",
+        "url_sumber": "https://www.unpi-cianjur.ac.id/berita",
+        "tanggal_pengambilan": "2026-05-01",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - Humas Kampus"
+      },
+      "prestasi_unggulan": [
+        {
+          "judul": "Mahasiswa Teknik Informatika Raih Juara Kompetisi UI/UX Mobile App Tingkat Jawa Barat",
+          "kategori": "Prestasi Akademik & Teknologi",
+          "tanggal": "24 April 2026"
+        },
+        {
+          "judul": "Program Studi Manajemen Sukses Menggelar Expo Technopreneurship Kreatif Mahasiswa",
+          "kategori": "Kegiatan & Kewirausahaan",
+          "tanggal": "18 April 2026"
+        },
+        {
+          "judul": "Fakultas Ilmu Komunikasi Gandeng Kominfo Latih Literasi Digital & Public Speaking",
+          "kategori": "Kemitraan Strategis",
+          "tanggal": "10 April 2026"
+        }
+      ]
+    },
+    "12_fasilitas_kampus": {
+      "kategori": "Fasilitas Kampus",
+      "metadata": {
+        "sumber": "Biro Umum & Sarana Prasarana UNPI",
+        "url_sumber": "https://www.unpi-cianjur.ac.id/fasilitas",
+        "tanggal_pengambilan": "2026-04-20",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - Sarana Prasarana"
+      },
+      "daftar_fasilitas": [
+        "Gedung Kampus Terpadu Representatif di Pusat Cianjur",
+        "Laboratorium Komputer & Jaringan Internet Berkecepatan Tinggi",
+        "Studio Audio Visual & Broadcasting Ilmu Komunikasi",
+        "Perpustakaan Digital (e-Library) & Ruang Baca Mandiri",
+        "Laboratorium Bahasa & Multimedia",
+        "Fasilitas Olahraga Lengkap (Lapangan Futsal, Basket, Bulutangkis)",
+        "Mushola Kampus & Ruang Kegiatan Kerohanian",
+        "Area Kantin Sehat Higienis & Parkir Luas Terjaga",
+        "Free Wi-Fi Area di Seluruh Sudut Kampus"
+      ]
+    },
+    "13_alumni": {
+      "kategori": "Alumni & Ikatan Alumni (IKA UNPI)",
+      "metadata": {
+        "sumber": "Pusat Karir & Ikatan Alumni UNPI (IKA UNPI)",
+        "url_sumber": "https://www.unpi-cianjur.ac.id/alumni",
+        "tanggal_pengambilan": "2026-04-25",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - Pusat Karir"
+      },
+      "ikatan_alumni": "Ikatan Alumni Universitas Putra Indonesia (IKA UNPI)",
+      "sebaran_karir": [
+        "Software Engineer & IT Consultant di Instansi Nasional dan Startup",
+        "Aparatur Sipil Negara (ASN) & Pegawai BUMN",
+        "Public Relations Specialist & Jurnalis Media Massa",
+        "Praktisi Perbankan, Kantor Akuntan Publik, dan Auditor Finansial",
+        "Wirausahawan Berdaya Saing Mandiri di Wilayah Jawa Barat"
+      ],
+      "tracer_study": "Rata-rata masa tunggu lulusan bekerja kurang dari 4 bulan setelah wisuda"
+    },
+    "14_akademik_administrasi": {
+      "kategori": "Informasi Akademik & Layanan Administrasi",
+      "metadata": {
+        "sumber": "BAAK & BAUK Universitas Putra Indonesia Cianjur",
+        "url_sumber": "https://www.unpi-cianjur.ac.id/akademik",
+        "tanggal_pengambilan": "2026-05-01",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - BAAK & BAUK"
+      },
+      "layanan": [
+        "SIAKAD (Sistem Informasi Akademik) Online untuk Pengisian KRS dan KHS",
+        "Layanan Cetak Transkrip Nilai & Legalisir Ijazah Cepat",
+        "Bimbingan Dosen PA (Pembimbing Akademik) Terjadwal",
+        "Layanan Surat Keterangan Mahasiswa Aktif untuk Beasiswa/Instansi",
+        "Konseling Karir dan Bimbingan Konseling Mahasiswa"
+      ]
+    },
+    "15_media_sosial_publikasi": {
+      "kategori": "Media Sosial & Publikasi Resmi",
+      "metadata": {
+        "sumber": "Divisi Humas & Publikasi Digital UNPI",
+        "url_sumber": "https://www.unpi-cianjur.ac.id/kontak",
+        "tanggal_pengambilan": "2026-05-01",
+        "tanggal_pembaruan": "2026-11-02",
+        "status_verifikasi": "Terverifikasi Resmi",
+        "prioritas_sumber": "Tingkat 1 - Humas Digital"
+      },
+      "akun_resmi": {
+        "instagram": "https://www.instagram.com/unpicianjur/",
+        "instagram_humas": "https://www.instagram.com/humas_unpi/",
+        "facebook": "https://www.facebook.com/unpicianjur/",
+        "tiktok": "https://www.tiktok.com/@unpi_cianjur",
+        "youtube": "https://www.youtube.com/@UNPICianjurOfficial",
+        "repository_jurnal": "https://repository.unpi-cianjur.ac.id/"
+      }
+    }
+  },
+  "institusi": {
+    "nama": "Universitas Putra Indonesia (UNPI) Cianjur",
+    "singkatan": "UNPI",
+    "yayasan": "Yayasan Pendidikan Putra Indonesia (YPP-PI)",
+    "tahun_berdiri": 2001,
+    "alamat": "Jl. Dr. Muwardi No. 66 (Bypass), Kel. Muka, Kec. Cianjur, Kabupaten Cianjur, Jawa Barat 43215",
+    "telepon": "(0263) 262604 / 270958",
+    "email": "info@unpi-cianjur.ac.id",
+    "email_humas": "humas@unpi-cianjur.ac.id",
+    "website": "https://www.unpi-cianjur.ac.id/",
+    "akreditasi_institusi": "Terakreditasi Baik Sekali",
+    "lembaga_akreditasi": "BAN-PT",
+    "sk_akreditasi": "No. 782/SK/BAN-PT/Akred/PT/2024",
+    "masa_berlaku": "2029"
+  },
+  "fakultas": [
+    {
+      "id": 1,
+      "kode": "FT",
+      "nama": "Fakultas Teknik",
+      "dekan": "Belum Terverifikasi (Pejabat Baru)",
+      "status_dekan": "Belum Terverifikasi SK",
+      "jumlah_prodi": 2
+    },
+    {
+      "id": 2,
+      "kode": "FE",
+      "nama": "Fakultas Ekonomi",
+      "dekan": "Belum Terverifikasi (Pejabat Baru)",
+      "status_dekan": "Belum Terverifikasi SK",
+      "jumlah_prodi": 2
+    },
+    {
+      "id": 3,
+      "kode": "FIKOM",
+      "nama": "Fakultas Ilmu Komunikasi",
+      "dekan": "Belum Terverifikasi (Pejabat Baru)",
+      "status_dekan": "Belum Terverifikasi SK",
+      "jumlah_prodi": 1
+    },
+    {
+      "id": 4,
+      "kode": "FS",
+      "nama": "Fakultas Sastra",
+      "dekan": "Belum Terverifikasi (Pejabat Baru)",
+      "status_dekan": "Belum Terverifikasi SK",
+      "jumlah_prodi": 1
+    }
+  ],
+  "program_studi": [
+    {
+      "id": 1,
+      "fakultas_id": 1,
+      "fakultas": "Fakultas Teknik",
+      "jenjang": "S1",
+      "nama_prodi": "Teknik Informatika",
+      "gelar": "S.Kom. (Sarjana Komputer)",
+      "kepala_up_prodi": "Mohamad Sidiq Permana, S.T., M.Kom.",
+      "akreditasi": "Baik Sekali",
+      "lembaga_akreditasi": "LAM INFOKOM / BAN-PT",
+      "nomor_sk": "No. 124/SK/LAM-INFOKOM/Akred/S1/2024",
+      "masa_berlaku": "2029",
+      "prospek_karir": [
+        "Software Engineer",
+        "Fullstack Developer",
+        "Data Scientist",
+        "IT Manager"
+      ]
+    },
+    {
+      "id": 2,
+      "fakultas_id": 2,
+      "fakultas": "Fakultas Ekonomi",
+      "jenjang": "S1",
+      "nama_prodi": "Manajemen",
+      "gelar": "S.M. (Sarjana Manajemen)",
+      "kepala_up_prodi": "Iis Kartini, S.Sos., M.M.",
+      "akreditasi": "Baik Sekali",
+      "lembaga_akreditasi": "LAMEMBA / BAN-PT",
+      "nomor_sk": "No. 312/SK/LAMEMBA/Akred/S1/2024",
+      "masa_berlaku": "2029",
+      "prospek_karir": [
+        "Business Manager",
+        "Digital Marketer",
+        "Entrepreneur",
+        "HR Officer"
+      ]
+    },
+    {
+      "id": 3,
+      "fakultas_id": 2,
+      "fakultas": "Fakultas Ekonomi",
+      "jenjang": "S1",
+      "nama_prodi": "Akuntansi",
+      "gelar": "S.Ak. (Sarjana Akuntansi)",
+      "kepala_up_prodi": "Merry Merliani Hindarsah, S.E., M.Ak.",
+      "akreditasi": "Baik",
+      "lembaga_akreditasi": "LAMEMBA / BAN-PT",
+      "nomor_sk": "No. 195/SK/LAMEMBA/Akred/S1/2023",
+      "masa_berlaku": "2028",
+      "prospek_karir": [
+        "Auditor",
+        "Akuntan Perusahaan",
+        "Konsultan Pajak",
+        "Analis Keuangan"
+      ]
+    },
+    {
+      "id": 4,
+      "fakultas_id": 3,
+      "fakultas": "Fakultas Ilmu Komunikasi",
+      "jenjang": "S1",
+      "nama_prodi": "Ilmu Komunikasi",
+      "gelar": "S.I.Kom. (Sarjana Ilmu Komunikasi)",
+      "kepala_up_prodi": "Dwi Sri Agustina, S.I.Kom., M.I.Kom.",
+      "akreditasi": "Baik Sekali",
+      "lembaga_akreditasi": "BAN-PT",
+      "nomor_sk": "No. 401/SK/BAN-PT/Akred/S1/2024",
+      "masa_berlaku": "2029",
+      "prospek_karir": [
+        "Public Relations Specialist",
+        "Social Media Strategist",
+        "Journalist",
+        "Content Creator"
+      ]
+    },
+    {
+      "id": 5,
+      "fakultas_id": 4,
+      "fakultas": "Fakultas Sastra",
+      "jenjang": "S1",
+      "nama_prodi": "Sastra Inggris",
+      "gelar": "S.S. (Sarjana Sastra)",
+      "kepala_up_prodi": "Shagita Maulady Anjany, M.Hum.",
+      "akreditasi": "Baik",
+      "lembaga_akreditasi": "BAN-PT",
+      "nomor_sk": "No. 305/SK/BAN-PT/Akred/S1/2024",
+      "masa_berlaku": "2029",
+      "prospek_karir": [
+        "Translator & Interpreter",
+        "Content Writer",
+        "Linguist",
+        "Diplomatic Staff"
+      ]
+    },
+    {
+      "id": 6,
+      "fakultas_id": 1,
+      "fakultas": "Fakultas Teknik",
+      "jenjang": "D3",
+      "nama_prodi": "Manajemen Informatika",
+      "gelar": "A.Md.Kom. (Ahli Madya Komputer)",
+      "kepala_up_prodi": "Widianjani, M.Pd.",
+      "akreditasi": "Baik",
+      "lembaga_akreditasi": "BAN-PT",
+      "nomor_sk": "No. 092/SK/BAN-PT/Akred/D3/2023",
+      "masa_berlaku": "2028",
+      "prospek_karir": [
+        "IT Support Specialist",
+        "Database Administrator Staff",
+        "Junior Programmer"
+      ]
+    }
+  ],
+  "pimpinan": [
+    {
+      "id": 1,
+      "jabatan": "Ketua Yayasan Pendidikan Putra Indonesia (YPP-PI)",
+      "nama": "H. Yudi Junadi, S.H., M.H.",
+      "unit": "Yayasan",
+      "sk_dasar": "SK Yayasan YPP-PI Official"
+    },
+    {
+      "id": 2,
+      "jabatan": "Rektor",
+      "nama": "Dr. Astri Dwi Andriani, S.S., M.Pd.",
+      "unit": "Rektorat",
+      "sk_dasar": "SK Rektor UNPI Official"
+    },
+    {
+      "id": 3,
+      "jabatan": "Wakil Rektor I (Bidang Akademik & Kurikulum)",
+      "nama": "Ir. Cecep Nurul Alam, M.T.",
+      "unit": "Rektorat",
+      "sk_dasar": "SK Rektor UNPI Official"
+    },
+    {
+      "id": 4,
+      "jabatan": "Wakil Rektor II (Bidang Keuangan, SDM & Aset)",
+      "nama": "Hj. Endang Tri S, S.E., M.M.",
+      "unit": "Rektorat",
+      "sk_dasar": "SK Rektor UNPI Official"
+    },
+    {
+      "id": 5,
+      "jabatan": "Wakil Rektor III (Bidang Kemahasiswaan, Alumni & Humas)",
+      "nama": "Drs. H. Mulyadi, M.Si.",
+      "unit": "Rektorat",
+      "sk_dasar": "SK Rektor UNPI Official"
+    }
+  ],
+  "pmb_2026": {
+    "biaya_pendaftaran": "Rp 250.000,-",
+    "status": "Gelombang 2 Aktif",
+    "gelombang": [
+      {
+        "nama": "Gelombang 1 (Early Bird)",
+        "periode": "02 Jan - 30 Apr 2026",
+        "keuntungan": "Diskon 30% Registrasi Awal",
+        "status": "Selesai"
+      },
+      {
+        "nama": "Gelombang 2 (Reguler Utama)",
+        "periode": "01 Mei - 31 Jul 2026",
+        "keuntungan": "Diskon 15% Biaya Pengembangan",
+        "status": "Aktif"
+      },
+      {
+        "nama": "Gelombang 3 (Gelombang Akhir)",
+        "periode": "01 Ags - 25 Sep 2026",
+        "keuntungan": "Fasilitas Cicilan Fleksibel",
+        "status": "Mendatang"
+      }
+    ],
+    "jalur_masuk": [
+      "Jalur Nilai Raport (Tanpa Tes Tertulis)",
+      "Jalur Skor UTBK / SNBT",
+      "Jalur Prestasi Akademik & Seni/Olahraga",
+      "Jalur Beasiswa Hafiz Al-Qur'an & Influencer",
+      "Jalur Kelas Karyawan / Sore-Malam"
+    ]
+  },
+  "beasiswa": [
+    {
+      "id": 1,
+      "nama": "KIP Kuliah Kementerian",
+      "cakupan": "Bebas 100% UKT 8 Semester + Uang Saku Bulanan",
+      "syarat": "Kartu KIP/KKS/DTKS Kemensos, Lulusan 2024-2026"
+    },
+    {
+      "id": 2,
+      "nama": "Beasiswa Hafiz Al-Qur'an UNPI",
+      "cakupan": "Potongan 50% (5 Juz), 75% (10 Juz), Bebas 100% (30 Juz)",
+      "syarat": "Syahadah Tahfiz, Lolos Uji Tasmi' Tim Penilai"
+    },
+    {
+      "id": 3,
+      "nama": "Beasiswa Influencer & Creative",
+      "cakupan": "Potongan UKT 50% & Duta Humas Kampus",
+      "syarat": "Min. 5.000 followers di IG/TikTok/YouTube positif"
+    },
+    {
+      "id": 4,
+      "nama": "Beasiswa Prestasi Yayasan YPP-PI",
+      "cakupan": "Potongan Biaya 25% - 50%",
+      "syarat": "Juara 1-3 Tingkat Kabupaten/Provinsi/Nasional"
+    }
+  ]
+}
